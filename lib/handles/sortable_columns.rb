@@ -295,7 +295,7 @@ module Handles  #:nodoc:
       #
       #   sortable_column_title_to_name("ProductName")  # => "product_name"
       def sortable_column_title_to_name(title)    #:nodoc:
-        title.gsub(/(\s)(\S)/) {$2.upcase}.underscore
+        title.gsub(/(\s)(\S)/) {$2}
       end
 
       # Internal use only. Access/initialize feature's config.
